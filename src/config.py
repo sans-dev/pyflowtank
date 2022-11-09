@@ -1,5 +1,5 @@
 show_bin = False # flag that defines if the binarized video is presented or not
-vid_slice=[500,1500] # video slice of frames used for analysis
+vid_slice = [500,1500] # video slice of frames used for analysis
 save_gif = True # flag which controls whether a gif is extracted from the video
 
 # defines the mouth size in mm
