@@ -1,4 +1,7 @@
-# pyflowtank
+# pyflowtank 
+
+<img src="logo.gif" align="center" width="300" height="200" />
+
 
 ## Installation
 First install the dependencies of pyflowtank into your virtual environment. To create a virtual environment type
