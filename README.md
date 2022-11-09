@@ -42,7 +42,7 @@ Change the **config.py** in regards of your options.
 Run the file **run_extraction.py** to start your analysis. The results will be stored in the **results** folder.
 You should find several files in there.
 
-1. _DATA.csv containts the data of the upper and lower inc boundaries in the format: ```[n_frames,frame_width*2]``` The frame_widht it multiplied by two because the upper and lower values are stored in this dimension for every pixel in an alternating manner.  
+1. _DATA.csv containts the data of the upper and lower inc boundaries in the format: ```[n_frames,frame_width*2]``` The frame_width it multiplied by 2 because the upper and lower values are stored in this dimension for every pixel in an alternating manner.  
 
 ## Algorithm
 pyflowtank uses image binarisation algorithms to extract the upper and lower position of the inc stream in the tank. 
