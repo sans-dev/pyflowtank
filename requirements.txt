@@ -1,0 +1,5 @@
+opencv-contrib-python
+imageio
+numpy
+matplotlib
+pandas
