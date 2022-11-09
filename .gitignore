@@ -1,0 +1,10 @@
+.fische
+.vscode
+videos
+results
+data
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+src/__pycache__
