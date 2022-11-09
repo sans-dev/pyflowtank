@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 from tools import *
-from mouth_sizes import mouth_sizes
+from config import show_bin, save_gif, vid_slice, mouth_sizes
 
 plt.style.use('ggplot')
 
@@ -162,15 +162,12 @@ def play(path, mouth_mm,vid_slice=[500,1500],show=False,save_gif=False):
 
 def main():
     video_path = Path(r'videos').glob("*.MOV")
-    show = False
-    vid_slice=[500,1500]
-    save_gif = True
     for vid in video_path:
         # extract id
         _id = vid.stem.split("_")[0]
         mouth_mm = mouth_sizes[_id]
         
-        play(vid,mouth_mm,vid_slice=vid_slice,show=show,save_gif=save_gif)
+        play(vid,mouth_mm,vid_slice=vid_slice,show=show_bin,save_gif=save_gif)
 
 if __name__ == '__main__':
     main()
