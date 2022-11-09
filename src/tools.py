@@ -145,8 +145,8 @@ def kmeans(cap):
 
 
 def click_event(event, x, y, flags, params):
-    landmarks = ['operculum','GA1','upper_jaw','lower_jaw','needle']
     global pos_list
+    lms = list(pos_list.keys())
     # checking for left mouse clicks
     if event == cv2.EVENT_LBUTTONDOWN:
         position =  [x,y]
@@ -162,10 +162,13 @@ def click_event(event, x, y, flags, params):
         # distance = []
         # for idx,pt in pos_list.items():
         #     distance.append(point_distance(pt,position))
-        del_idx = list(pos_list.keys()).index(params) - 1
+        del_idx = lms.index(params) - 1
         if del_idx < 0:
-            return
-        pos_list[landmarks[del_idx]] = None
+            # clear everything
+            for key in lms:
+                pos_list[key] = None
+
+        pos_list[lms[del_idx]] = None
     return
 
 def get_pixel_positions(frame):
