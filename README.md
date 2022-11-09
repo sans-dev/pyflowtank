@@ -33,4 +33,4 @@ to install all dependencies into the virtual environment.
 First, create the folders **videos** and **results** in the root directory of pyflowtank.
 Afterwards copy all video files you want to analyse into the **videos** folder.
 
-Run the file **auswertung.py** to start your analysis. The results will be stored in the **results** folder.
+Run the file **run_extraction.py** to start your analysis. The results will be stored in the **results** folder.
