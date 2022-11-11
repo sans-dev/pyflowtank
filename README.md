@@ -22,13 +22,18 @@ in unix and
 ```
 .\path\to\your\env\scripts\Activate.sh 
 ```
-in windows, run the command
+in windows. 
+
+Clone the pyflowtank project with git or download a zipfile. 
+Unzip it into your desired location on your hard drive. 
+
+In the terminal navigate into the folder pyflowtank and run the following command to install all dependencies into the virtual environment.
 
 ```
 pip install -r requirements.txt
 ```
 
-to install all dependencies into the virtual environment.
+
 
 
 ## Usage
