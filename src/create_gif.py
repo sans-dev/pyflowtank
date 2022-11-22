@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 from tools import *
-from config import show_bin, save_gif, vid_slice, mouth_sizes
+from config import save_gif, vid_slice
 
 plt.style.use('ggplot')
 
