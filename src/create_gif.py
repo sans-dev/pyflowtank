@@ -1,13 +1,9 @@
 import cv2
 import imageio
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
 from pathlib import Path
 from tools import *
 from config import save_gif, vid_slice
-
-plt.style.use('ggplot')
 
 
 def play(path,vid_slice=[500,1500],save_gif=False):
