@@ -50,9 +50,10 @@ Run the file **run_extraction.py** to start your analysis. The results will be s
 
 1. ```_DATA.csv``` containts the data of the upper and lower inc boundaries in the format: ```[n_frames,frame_width*2]``` The frame_width it multiplied by 2 because the upper and lower values are stored in this dimension for every pixel in an alternating manner.
 2. ```_LM.csv``` contains the pixel positions of the landmarks.
-3. If set to True in the config file, a gif of the binarized sequence is saved too.
+3. If True in the config file, a gif of the binarized sequence is saved too.
 
-
+You can use the ```create_gif.py``` script to create a gif of the original videos you analyse.
+The excerpt can be defined in the config file and is the same as the one used for analysis.  
 ## Algorithm
 pyflowtank uses image binarisation algorithms to extract the upper and lower position of the inc stream in the tank. 
 In a first step several landmarks can be set.
